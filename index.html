@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Partage d'Écran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Partage d'Écran</h1>
+        
+        <div class="controls">
+            <button id="startBtn">Démarrer le partage</button>
+            <button id="stopBtn" disabled>Arrêter le partage</button>
+            <button id="updateBtn">Vérifier les mises à jour</button>
+        </div>
+
+        <div class="video-container">
+            <video id="localVideo" autoplay muted></video>
+        </div>
+
+        <div class="connection">
+            <h3>Connexion</h3>
+            <input type="text" id="roomId" placeholder="ID de la salle">
+            <button id="joinBtn">Rejoindre</button>
+            <button id="createBtn">Créer une salle</button>
+        </div>
+
+        <div class="remote-videos" id="remoteVideos"></div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

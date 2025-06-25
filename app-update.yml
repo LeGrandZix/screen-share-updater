@@ -1,0 +1,4 @@
+provider: github
+owner: LeGrandZix
+repo: screen-share-updater
+updaterCacheDirName: screen-share-updater
